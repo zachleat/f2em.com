@@ -1,6 +1,6 @@
 body {
 	width: 100%;
-	font-family: 'Helvetica Neue', sans-serif;
+	font: 100% 'Helvetica Neue', sans-serif;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #aaaaaa;
@@ -164,21 +164,16 @@ div.manifesto-empty {
 	display: none;
 }
 
-/* Font Sizes */
-body {
-	font-size: 11px;
-}
-
 /* Fake media query support */
 .f2em-lte-ie8 body {
-	width: 800px;
-	font-size: 36px;
+	width: 50em;
+	font-size: 1.5em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50em) {
 	body {
-		width: 800px;
-		font-size: 24px;
+		width: 50em;
+		font-size: 1.5em;
 	}
 
 	.sausage-set {
