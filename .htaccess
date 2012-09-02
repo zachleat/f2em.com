@@ -1,3 +1,9 @@
+AddType text/html .html
+AddType text/plain .txt
+AddType text/xml .xml
+AddType text/css .css
+AddType application/javascript .js
+
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
 </IfModule>
