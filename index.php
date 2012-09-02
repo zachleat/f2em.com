@@ -215,7 +215,7 @@ endif;
 
 	<div class="manifesto-footer manifesto-slide manifesto-bigtext">
 		<span class="emphasis">I am a Front End Engineer.</span>
-		<div class="bigtext-exempt">From the brainheart of <a href="http://twitter.com/zachleat">@zachleat</a> on giants' shoulders.</div>
+		<div class="bigtext-exempt">From the brainheart of <a href="http://twitter.com/zachleat">@zachleat</a>, on giants' shoulders.</div>
 	</div>
 <?php
 if(empty($_GET['nojs'])):
