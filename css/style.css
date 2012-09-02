@@ -166,17 +166,45 @@ div.manifesto-empty {
 
 /* Fake media query support */
 .f2em-lte-ie8 body {
-	width: 50em;
+	width: 33.3333em;
 	font-size: 1.5em;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 33.3333em) {
 	body {
-		width: 50em;
+		width: 33.3333em;
 		font-size: 1.5em;
 	}
 
 	.sausage-set {
 		display: block;
 	}
+}
+
+.social {
+	text-align: center;
+	padding-top: 2em;
+}
+.socialcount {
+	font-family: Helvetica Neue;
+	font-size: .5em;
+	display: inline-block;
+}
+.manifesto-footer .socialcount {
+	font-size: .75em;
+}
+.manifesto-footer .socialcount,
+.manifesto-footer .socialcount :link,
+.manifesto-footer .socialcount :visited {
+	color: #000;
+}
+.manifesto-footer .socialcount > li:hover {
+	background-color: #bbb;
+}
+.socialcount a {
+	text-decoration: none;
+}
+.socialcount i {
+	position: relative;
+	top: 2px;
 }

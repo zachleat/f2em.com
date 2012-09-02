@@ -3,13 +3,15 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Front End Engineer Manifesto</title>
+	<title>A Front End Engineer's Manifesto</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php
 if(empty($_GET['nocss'])):
 ?>
 	<link rel="stylesheet" href="lib/fonts/league-gothic/stylesheet.css">
 	<link rel="stylesheet" href="lib/sausage.css">
+	<link rel="stylesheet" href="lib/socialcount/socialcount.css">
+	<link rel="stylesheet" href="lib/socialicons/social.css">
 	<link rel="stylesheet" href="css/style.css">
 <?php
 endif;
@@ -24,6 +26,13 @@ endif;
 		<div>By <a href="http://twitter.com/zachleat/">@zachleat</a></div>
 		<div><a href="?">Full Version</a> or <a href="?nojs=1&nocss=1">Full Monty</a></div>
 		<div><a href="?">Web</a> or <a href="?presentation=1">Presentation</a> Mode</div>
+		<div class="social">
+			<ul class="socialcount socialcount-large" data-url="http://f2em.com/">
+				<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://f2em.com/" title="Share on Facebook"><i class="foundicon-facebook"></i> Like <span class="count"></span></a></li>
+				<li class="twitter"><a href="https://twitter.com/intent/tweet?text=A Front End Engineer's Manifesto http://f2em.com/" title="Share on Twitter"><i class="foundicon-twitter"></i> Tweet <span class="count"></span></a></li>
+				<li class="googleplus"><a href="https://plusone.google.com/_/+1/confirm?url=http://f2em.com/" title="Share on Google Plus"><i class="foundicon-google-plus"></i> +1 <span class="count"></span></a></li>
+			</ul>
+		</div>
 	</div>
 	<ol>
 		<li id="user-first" class="manifesto-slide">
@@ -216,6 +225,13 @@ endif;
 	<div class="manifesto-footer manifesto-slide manifesto-bigtext">
 		<span class="emphasis">I am a Front End Engineer.</span>
 		<div class="bigtext-exempt">From the brainheart of <a href="http://twitter.com/zachleat">@zachleat</a>, on giants' shoulders.</div>
+		<div class="bigtext-exempt social">
+			<ul class="socialcount socialcount-large" data-url="http://f2em.com/">
+				<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://f2em.com/" title="Share on Facebook"><i class="foundicon-facebook"></i> Like <span class="count"></span></a></li>
+				<li class="twitter"><a href="https://twitter.com/intent/tweet?text=A Front End Engineer's Manifesto http://f2em.com/" title="Share on Twitter"><i class="foundicon-twitter"></i> Tweet <span class="count"></span></a></li>
+				<li class="googleplus"><a href="https://plusone.google.com/_/+1/confirm?url=http://f2em.com/" title="Share on Google Plus"><i class="foundicon-google-plus"></i> +1 <span class="count"></span></a></li>
+			</ul>
+		</div>
 	</div>
 <?php
 if(empty($_GET['nojs'])):
@@ -235,6 +251,7 @@ if(!empty($_GET['presentation'])):
 <?php
 endif; // presentation
 ?>
+	<script src="lib/socialcount/socialcount.js"></script>
 	<script src="js/script.js"></script>
 <?php
 endif; // nojs
