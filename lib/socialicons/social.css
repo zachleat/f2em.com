@@ -1,0 +1,44 @@
+/* font-face */
+@font-face {
+  font-family: "SocialFoundicons";
+  src: url("social_foundicons.eot");
+  src: url("social_foundicons.eot?#iefix") format("embedded-opentype"), url("social_foundicons.woff") format("woff"), url("social_foundicons.ttf") format("truetype"), url("social_foundicons.svg#SocialFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global foundicon styles */
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "SocialFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+.foundicon-thumb-up:before {
+  content: "\f000";
+}
+
+.foundicon-facebook:before {
+  content: "\f003";
+}
+
+.foundicon-twitter:before {
+  content: "\f004";
+}
+
+.foundicon-google-plus:before {
+  content: "\f00d";
+}
