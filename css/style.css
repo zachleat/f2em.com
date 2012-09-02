@@ -1,0 +1,187 @@
+body {
+	width: 100%;
+	font-family: 'Helvetica Neue', sans-serif;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #aaaaaa;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), to(#ffffff)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #aaaaaa, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, #aaaaaa, #ffffff); /* FF3.6 */
+	background-image: -ms-linear-gradient(top, #aaaaaa, #ffffff); /* IE10 */
+	background-image: -o-linear-gradient(top, #aaaaaa, #ffffff); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #aaaaaa, #ffffff);
+	padding: 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Minor issues with bigtext in IE */
+.f2em-lte-ie8 div.bigtext > * {
+	white-space: nowrap;
+}
+.f2em-lte-ie8 div.bigtext div.bigtext-exempt {
+	white-space: normal;
+}
+
+a {
+	color: #00a;
+}
+pre {
+	font-family: Monaco, Consolas, monospace;
+	font-style: normal;
+}
+q {
+	font-style: italic;
+}
+ol {
+	padding-left: 0;
+	margin-left: 0;
+	list-style-type: none;
+}
+div.manifesto-footer .bigtext-exempt {
+	padding-top: 60px;
+}
+div.manifesto-title .bigtext-exempt {
+	text-align: center;
+}
+div.manifesto-title,
+div.manifesto-bigtext .emphasis,
+div.manifesto-preface {
+	font-family: LeagueGothicRegular;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px hsla(0, 0%, 30%, 0.4);
+}
+div.manifesto-preface {
+	text-align: center;
+	font-size: 1.4em;
+}
+div.manifesto-bigtext > span {
+	display: inline;
+}
+.f2em-js div.manifesto-bigtext > span {
+	display: block;
+}
+.f2em-js div.manifesto-bigtext span.period {
+	display: none;
+}
+div.manifesto-bigtext span span {
+	font-size: .6em;
+}
+div.manifesto-bigtext span span.emphasis {
+	font-size: 1em;
+}
+.bigtext-exempt,
+.manifesto-detail {
+	text-align: justify;
+}
+.manifesto-detail,
+.manifesto-detail a,
+.manifesto-detail a:visited {
+	font-style: italic;
+	padding-top: 1em;
+	color: #555;
+}
+.manifesto-permalink {
+	padding-top: .5em;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.manifesto-slide:hover .manifesto-permalink {
+	visibility: visible;
+}
+.manifesto-permalink a {
+	font-size: .5em;
+	color: #888;
+	float: right;
+	text-decoration: none;
+}
+.manifesto-slide {
+	padding-bottom: 40px;
+	min-height: 300px;
+	width: 100%;
+}
+.manifesto-slide img {
+	width: 100%;
+}
+
+/* Flexbox to Vertically Center Slides */
+.manifesto-slide {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: stretch;
+ 
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-moz-box-align: stretch;
+ 
+	display: box;
+	box-orient: vertical;
+	box-align: stretch;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+}
+
+.manifesto-slide > div.manifesto-bigtext {
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+	display: block;
+}
+
+.manifesto-slide > div.manifesto-subslide {
+	display: none;
+}
+.manifesto-slide > div.manifesto-subslide-active {
+	display: block;
+}
+div.manifesto-empty {
+	text-align: center;
+	color: #aaa;
+}
+
+
+/* Sausage Plugin Modifications */
+.sausage-set {
+	display: none;
+	right: auto;
+	left: 0;
+}
+.sausage {
+	background-color: #000;
+	border-color: #000;
+}
+.sausage-current ~ .sausage {
+	background-color: transparent;
+	border-color: #999;
+}
+.sausage-hover .sausage-span {
+	display: none;
+}
+
+/* Font Sizes */
+body {
+	font-size: 11px;
+}
+
+/* Fake media query support */
+.f2em-lte-ie8 body {
+	width: 800px;
+	font-size: 36px;
+}
+
+@media (min-width: 800px) {
+	body {
+		width: 800px;
+		font-size: 24px;
+	}
+
+	.sausage-set {
+		display: block;
+	}
+}

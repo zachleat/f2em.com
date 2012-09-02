@@ -1,0 +1,38 @@
+.sausage-set {
+    position: fixed; right: 0; top: 0;
+    width: 10px; height: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#777), to(#fff));
+    background-image: -moz-linear-gradient(#777, #fff);
+    border-left: 1px solid #999;
+}
+    .sausage {
+        position: absolute; left: 0;
+        width: 100%; height: 100%;
+        text-decoration: none;
+        border-bottom: 1px solid #999;
+        cursor: pointer;
+    }
+    .sausage-hover,
+    .sausage-current {
+        background-color: #000;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(#333));
+        background-image: -moz-linear-gradient(#000, #333);
+        -moz-box-shadow: inset 0px 1px 2px 4px rgba(51, 63, 70, 0.025);
+    }
+        .sausage-span {
+            position: absolute; left: -12px; top: 5px; z-index: 2;
+            display: none;
+            width: 15px; height: 10px;
+            padding: 2px;
+            color: #888;
+            background-color: #fff;
+            border: solid 2px #b6d8ea;
+            font-size: 10px; line-height: 10px; font-weight: bold; text-align: center;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+            -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+        }
+        .sausage-hover .sausage-span {
+            display: block;
+        }
