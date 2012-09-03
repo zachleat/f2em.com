@@ -224,7 +224,7 @@ endif;
 
 	<div class="manifesto-footer manifesto-slide manifesto-bigtext">
 		<span class="emphasis">I am a Front End Engineer.</span>
-		<div class="bigtext-exempt">From the brainheart of <a href="http://twitter.com/zachleat">@zachleat</a>, on giants' shoulders.</div>
+		<div class="bigtext-exempt">From the brainheart of <a href="http://twitter.com/zachleat">@zachleat</a>, on giants' shoulders. Read the <a href="http://www.zachleat.com/web/manifesto/">blog post</a>.</div>
 		<div class="bigtext-exempt social">
 			<ul class="socialcount socialcount-large" data-url="http://f2em.com/">
 				<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://f2em.com/" title="Share on Facebook"><i class="foundicon-facebook"></i> Like <span class="count"></span></a></li>
