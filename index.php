@@ -132,7 +132,7 @@ endif;
 				</span>
 			</div>
 			<p class="manifesto-detail">
-				It is not just about helping users that may have trouble differentiating colors or difficulty reading small fonts, but is about providing comprehensive access for users that may prefer to use either the keyboard or the mouse; in providing a clean print friendly format; in providing content to a devices of varying technological capabilities.
+				It is not just about helping users that may have trouble differentiating colors or difficulty reading small fonts, but is about providing comprehensive access for users that may prefer to use either the keyboard or the mouse; in providing a clean print friendly format; in providing content to devices of varying technological capabilities.
 			</p>
 			<p class="manifesto-permalink"><a href="#accessibility">#Permalink</a></p>
 		</li>
