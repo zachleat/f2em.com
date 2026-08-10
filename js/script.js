@@ -192,20 +192,19 @@ ManifestoDemo = {
 	}
 };
 
-$(function() {
-	document.documentElement.className += ' f2em-js';
-
-	FontFaceLoad('LeagueGothicRegular').done(function()
-	{
-		Manifesto.init();
-		ManifestoDemo.init();
-		ManifestoDemo.refresh();
-		Manifesto.scrollTo();
-	});
-});
+document.documentElement.className += ' f2em-js';
 
 $(window).bind('resize', $.throttle(200, function()
 {
 	ManifestoDemo.refresh();
 	// bigtext resize is built into the plugin.
 }));
+
+if("fonts" in document) {
+	document.fonts.ready.then(() => {
+		Manifesto.init();
+		ManifestoDemo.init();
+		ManifestoDemo.refresh();
+		Manifesto.scrollTo();
+	});
+}

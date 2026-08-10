@@ -1,26 +1,15 @@
 body {
 	width: 100%;
-	font: 100% 'Helvetica Neue', sans-serif;
+	font-size: 1.5em;
+	font-family: system-ui, sans-serif;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #aaaaaa;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), to(#ffffff)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient(top, #aaaaaa, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
-	background-image: -moz-linear-gradient(top, #aaaaaa, #ffffff); /* FF3.6 */
-	background-image: -ms-linear-gradient(top, #aaaaaa, #ffffff); /* IE10 */
-	background-image: -o-linear-gradient(top, #aaaaaa, #ffffff); /* Opera 11.10+ */
 	background-image: linear-gradient(top, #aaaaaa, #ffffff);
-	padding: 10px;
+	padding: 0.625em; /* 10px /16 */
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-}
-/* Minor issues with bigtext in IE */
-.f2em-lte-ie8 div.bigtext > * {
-	white-space: nowrap;
-}
-.f2em-lte-ie8 div.bigtext div.bigtext-exempt {
-	white-space: normal;
 }
 
 a {
@@ -41,13 +30,14 @@ ol {
 div.manifesto-footer .bigtext-exempt {
 	padding-top: 60px;
 }
-div.manifesto-title .bigtext-exempt {
+div.manifesto-title .bigtext-exempt,
+div.manifesto-title .bigtext-exempt + * {
 	text-align: center;
 }
 div.manifesto-title,
 div.manifesto-bigtext .emphasis,
 div.manifesto-preface {
-	font-family: LeagueGothicRegular;
+	font-family: League Gothic;
 	text-transform: uppercase;
 	text-shadow: 0 0 1px hsla(0, 0%, 30%, 0.4);
 }
@@ -58,17 +48,13 @@ div.manifesto-preface {
 div.manifesto-bigtext > span {
 	display: inline;
 }
+div.manifesto-title.manifesto-bigtext > span,
+div.manifesto-bigtext .bigtext-exempt,
 .f2em-js div.manifesto-bigtext > span {
 	display: block;
 }
 .f2em-js div.manifesto-bigtext span.period {
 	display: none;
-}
-div.manifesto-bigtext span span {
-	font-size: .6em;
-}
-div.manifesto-bigtext span span.emphasis {
-	font-size: 1em;
 }
 .bigtext-exempt,
 .manifesto-detail {
@@ -94,7 +80,6 @@ div.manifesto-bigtext span span.emphasis {
 	visibility: visible;
 }
 .manifesto-permalink a {
-	font-size: .5em;
 	color: #888;
 	float: right;
 	text-decoration: none;
@@ -164,47 +149,11 @@ div.manifesto-empty {
 	display: none;
 }
 
-/* Fake media query support */
-.f2em-lte-ie8 body {
-	width: 33.3333em;
-	font-size: 1.5em;
-}
-
 @media (min-width: 33.3333em) {
 	body {
 		width: 33.3333em;
-		font-size: 1.5em;
 	}
-
 	.sausage-set {
 		display: block;
 	}
-}
-
-.social {
-	text-align: center;
-	padding-top: 2em;
-}
-.socialcount {
-	font-family: Helvetica Neue;
-	font-size: .5em;
-	display: inline-block;
-}
-.manifesto-footer .socialcount {
-	font-size: .75em;
-}
-.manifesto-footer .socialcount,
-.manifesto-footer .socialcount :link,
-.manifesto-footer .socialcount :visited {
-	color: #000;
-}
-.manifesto-footer .socialcount > li:hover {
-	background-color: #bbb;
-}
-.socialcount a {
-	text-decoration: none;
-}
-.socialcount i {
-	position: relative;
-	top: 2px;
 }
